@@ -6,16 +6,16 @@ Freeze-drop-path
 
 Copy the hpp file into your include/caffe/layers folder and copy the cpp and cu files into your src/caffe/layers folder. 
 
-Then, add the following to your ``src/caffe/proto/caffe.proto`` file in ``LayerParameter``::
+Then, add the following to your ``src/caffe/proto/caffe.proto`` file in ``LayerParameter``:
 
   optional FreezeDropPathParameter freeze_drop_path_param = 148;
 
 Set ``148`` to whatever you want that is not in conflict with another layer's parameters. Also add the following to the bottom ``caffe.proto``:
 
-message FreezeDropPathParameter {
-  optional uint32 num_iter_per_cycle = 1 [default = 0];
-  optional uint32 interval_type = 2 [default = 0];
-}
+    message FreezeDropPathParameter {
+      optional uint32 num_iter_per_cycle = 1 [default = 0];
+      optional uint32 interval_type = 2 [default = 0];
+    }
 
 Re-compile and you should now have access to the ``freezedroppath`` unit.
 
