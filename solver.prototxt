@@ -1,0 +1,17 @@
+net: "examples/fractalnet/architectures/fractal.prototxt"
+test_iter: 200
+test_interval: 500
+display: 250
+max_iter: 100000
+base_lr: 0.02
+lr_policy: "multistep"
+gamma: 0.1
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 50000
+snapshot_prefix: "examples/fractalnet/snapshots/fractal"
+solver_mode: GPU
+random_seed: 831486
+stepvalue: 50000
+stepvalue: 75000
+stepvalue: 87500
