@@ -7,6 +7,17 @@ In order to use the prototxt files, you should install Caffe along with the frac
 
 To use the SBN and TSN prototxt files, you will need to also install the freeze-drop-path code and the instructions are below.
 
+Prototxt files
+==============
+
+fractalnet.prototxt: The original fractalnet architecture
+fractalnet-AvgPool.prototxt: Replaces max pooling with average pooling in the original fractalnet architecture
+FoF.prototxt: The fractal of fractalnet architecture.
+FoF-TSN.prototxt: Taylor series modification where branch 2 is squared and branch 3 cubed prior to the final fractal join.
+SBN-FDP.prototxt: Stagewise Boosting network architecture with freeze-drop-path as the final join.
+TSN-FDP.prototxt: Taylor series modification of the SBN architecture.
+
+
 Freeze-drop-path
 ================
 
