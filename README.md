@@ -4,7 +4,9 @@ Caffe code and prototxt files for the CNN Design Patterns paper
 Freeze-drop-path
 ================
 
-Copy all files into your Caffe folder. Then, add the following to your ``src/caffe/proto/caffe.proto`` file in ``LayerParameter``::
+Copy the hpp file into your include/caffe/layers folder and copy the cpp and cu files into your src/caffe/layers folder. 
+
+Then, add the following to your ``src/caffe/proto/caffe.proto`` file in ``LayerParameter``::
 
   optional FreezeDropPathParameter freeze_drop_path_param = 148;
 
