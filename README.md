@@ -10,6 +10,7 @@ To use the SBN and TSN prototxt files, you will need to also install the freeze-
 Prototxt files
 ==============
 
+    solver.prototxt: The solver file.
     fractalnet.prototxt: The original fractalnet architecture
     fractalnet-AvgPool.prototxt: Replaces max pooling with average pooling in the original fractalnet architecture
     FoF.prototxt: The fractal of fractalnet architecture.
