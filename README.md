@@ -1,14 +1,14 @@
 # CNNDesignPatterns
 Caffe code and prototxt files for the CNN Design Patterns paper
 
-Freeze-drop=path
+Freeze-drop-path
 ================
 
 Copy all files into your Caffe folder. Then, add the following to your ``src/caffe/proto/caffe.proto`` file in ``LayerParameter``::
 
   optional FreezeDropPathParameter freeze_drop_path_param = 148;
 
-Set ``148`` to whatever you want that is not in conflict with another layer's parameters. Also add the following to the bottom ``caffe.proto``::
+Set ``148`` to whatever you want that is not in conflict with another layer's parameters. Also add the following to the bottom ``caffe.proto``:
 
 message FreezeDropPathParameter {
   optional uint32 num_iter_per_cycle = 1 [default = 0];
