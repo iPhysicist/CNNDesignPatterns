@@ -1,5 +1,11 @@
 # CNNDesignPatterns
-Caffe code and prototxt files for the CNN Design Patterns paper
+
+This repository hosts the Caffe code and prototxt files for the CNN Design Patterns paper available at https://arxiv.org/abs/1611.00847.  If you use this work in your research, please cite this paper.
+
+
+In order to use the prototxt files, you should install Caffe along with the fractalnet code located at https://github.com/gustavla/fractalnet/tree/master/caffe.
+
+To use the SBN and TSN prototxt files, you will need to also install the freeze-drop-path code and the instructions are below.
 
 Freeze-drop-path
 ================
